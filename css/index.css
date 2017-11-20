@@ -377,7 +377,9 @@ body {
 .introduce_text>ul>li>span:last-child {
     white-space: nowrap;
 }
-
+.introduce_text>ul>li>span>a{
+    color: #fff;
+}
 .introduce_text>section {
     /*margin-left: 50px;*/
     width: 50%;
