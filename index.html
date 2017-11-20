@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"> -->
+    <!-- <script src="./node_modules/amfe-flexible/index.js"></script> -->
     <title>Swiper demo</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <!-- Demo styles -->
     <style>
-    html{
+    html {
         font-size: 10px;
     }
+
     body {
         background: #eee;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -51,10 +53,12 @@
         background: #3183ff;
         color: #fff;
     }
+
     .swiper-slide:nth-child(3) {
         background: #2c343c;
         color: #fff;
     }
+
     .swiper-slide p {
         transform: translateY(100px);
         opacity: 0;
@@ -74,7 +78,7 @@
         right: 0;
         left: 0;
         height: 0px;
-        overflow:hidden;
+        overflow: hidden;
         z-index: 1;
         opacity: 0;
         transition: all .6s ease;
@@ -358,7 +362,7 @@
 
     .introduce_text {
         width: 70%;
-        flex:2;
+        flex: 2;
         display: flex;
         justify-content: space-between;
         text-align: left;
@@ -371,6 +375,7 @@
         opacity: 0;
         transition: all .4s;
     }
+
     .ani-slide .introduce_text>ul>li {
         transform: translateY(0);
         opacity: 1;
@@ -388,7 +393,7 @@
     }
 
     .introduce_icon {
-        flex:1;
+        flex: 1;
         display: flex;
         width: 60%;
         justify-content: space-around;
@@ -420,13 +425,14 @@
         transform: rotate(360deg);
     }
     /*专业技能*/
-
     /*工作经历*/
-    .work_experience{
+
+    .work_experience {
         display: flex;
         position: relative;
     }
-    .work_experience:after{
+
+    .work_experience:after {
         content: '';
         width: 100%;
         height: 0.4rem;
@@ -437,11 +443,13 @@
         top: 50%;
         transform: translateY(-50%);
     }
-    .work_experience>li{
-        padding:0 10rem;
+
+    .work_experience>li {
+        padding: 0 10rem;
         position: relative;
     }
-    .work_experience>li:before{
+
+    .work_experience>li:before {
         content: '';
         display: block;
         width: 1rem;
@@ -453,62 +461,86 @@
         top: 50%;
         transform: translateY(-50%);
     }
-    .work_experience>li>h2,.work_experience>li>p{
-        padding:1rem 0;
+
+    .work_experience>li>h2,
+    .work_experience>li>p {
+        padding: 1rem 0;
     }
+
     .work_experience>li:nth-of-type(1)>p {
         transition-duration: .2s;
     }
+
     .work_experience>li:nth-of-type(2)>p {
         transition-duration: .4s;
     }
+
     .work_experience>li:nth-of-type(3)>p {
         transition-duration: .6s;
     }
     /*项目经验*/
-    .items{
+
+    .items {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         width: 800px;
     }
-    .item{
+
+    .item {
         width: 20rem;
         height: 20rem;
-        padding:1rem;
+        padding: 1rem;
     }
-    .item>img{
+
+    .item>img {
         width: 10rem;
         height: 10rem;
         margin-bottom: 1rem;
         border-radius: 50%;
-        border:4px solid #fff;
+        border: 4px solid #fff;
         background-color: #fff;
     }
+
     .item:nth-of-type(1)>p {
         transition-duration: .2s;
     }
+
     .item:nth-of-type(2)>p {
         transition-duration: .4s;
     }
+
     .item:nth-of-type(3)>p {
         transition-duration: .6s;
     }
+
     .item:nth-of-type(4)>p {
         transition-duration: .8s;
     }
+
     .item:nth-of-type(5)>p {
         transition-duration: 1s;
     }
     /*联系邮箱*/
-    .email{
+
+    .email {
         font-size: 3rem;
     }
-    .email>a{
+
+    .email>a {
         color: #fff;
     }
     </style>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8d3493c55396600ff992f8c94973ed25";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
 </head>
 
 <body>
@@ -606,7 +638,8 @@
                 </ul>
             </div>
             <div class="swiper-slide">
-                <p class="email">联系邮箱<br><a href="mailto:gaohongwei931011@gmail.com" hidefocus="true">gaohongwei931011@gmail.com</a></p>
+                <p class="email">联系邮箱
+                    <br><a href="mailto:gaohongwei931011@gmail.com" hidefocus="true">gaohongwei931011@gmail.com</a></p>
             </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -676,7 +709,7 @@
         onSlideChangeEnd: function(swiper) {
             // alert(swiper.activeIndex)
             let top = document.querySelector('.top')
-            if(swiper.activeIndex === 2){
+            if (swiper.activeIndex === 2) {
                 myChart.setOption(option);
                 myChart2.setOption(option2);
             }
