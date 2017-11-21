@@ -172,8 +172,8 @@ let option2 = {
         radius: '55%',
         center: ['50%', '50%'],
         data: [
-            { value: 335, name: '其他(V2EX、cnode、知乎...)' },
             { value: 310, name: 'Coding' },
+            { value: 335, name: '其他(V2EX、cnode、知乎...)' },
             { value: 274, name: 'StackOverFlow' },
             { value: 235, name: 'SegmentFault' },
             { value: 400, name: 'Github' }
