@@ -86,7 +86,7 @@ var option = {
             color: '#ccc'
         }
     },
-    color: ['#3398DB'],
+    color: [],
     tooltip: {
         trigger: 'axis',
         axisPointer: { // 坐标轴指示器，坐标轴触发有效
@@ -121,6 +121,7 @@ var option = {
     }],
     yAxis: [{
         type: 'value',
+        max: '5',
         axisLine: {
             lineStyle: {
                 type: 'solid',
@@ -138,7 +139,21 @@ var option = {
         name: '熟练度',
         type: 'bar',
         barWidth: '60%',
-        data: [85, 82, 75, 75, 80, 78, 60]
+        itemStyle: {
+            normal: {
+                color: function(params) {
+                    // build a color map as your need.
+                    var colorList = ['#e54d26', '#fa8c35', '#faff72', '#21a675', '#00e09e', '#4b5cc4', '#8d4bbb']
+                    return colorList[params.dataIndex]
+                },
+                label: {
+                    show: true,
+                    position: 'top',
+                    formatter: '{b}\n{c}'
+                }
+            }
+        },
+        data: [4, 4, 3, 3.5, 3, 3.5, 2]
     }]
 };
 let option2 = {
