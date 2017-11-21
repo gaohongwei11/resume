@@ -138,7 +138,7 @@ var option = {
         name: '熟练度',
         type: 'bar',
         barWidth: '60%',
-        data: [88, 85, 80, 85, 85, 80, 70]
+        data: [85, 82, 75, 75, 80, 78, 60]
     }]
 };
 let option2 = {
