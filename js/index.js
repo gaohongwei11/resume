@@ -79,7 +79,7 @@ var option = {
     backgroundColor: '#2c343c',
 
     title: {
-        text: 'Customized Pie',
+        text: '专业技能',
         left: 'center',
         top: 20,
         textStyle: {
@@ -101,7 +101,7 @@ var option = {
     },
     xAxis: [{
         type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        data: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Ajax', 'Vue', 'Node.js'],
         axisTick: {
             alignWithLabel: true
         },
@@ -135,17 +135,17 @@ var option = {
         }
     }],
     series: [{
-        name: '直接访问',
+        name: '熟练度',
         type: 'bar',
         barWidth: '60%',
-        data: [20, 40, 60, 80, 85, 90, 95]
+        data: [88, 85, 80, 85, 85, 80, 70]
     }]
 };
 let option2 = {
     backgroundColor: '#2c343c',
 
     title: {
-        text: 'Customized Pie',
+        text: '浏览网站',
         left: 'center',
         top: 20,
         textStyle: {
@@ -167,16 +167,16 @@ let option2 = {
         }
     },
     series: [{
-        name: '访问来源',
+        name: '访问热度',
         type: 'pie',
         radius: '55%',
         center: ['50%', '50%'],
         data: [
-            { value: 335, name: '直接访问' },
-            { value: 310, name: '邮件营销' },
-            { value: 274, name: '联盟广告' },
-            { value: 235, name: '视频广告' },
-            { value: 400, name: '搜索引擎' }
+            { value: 335, name: '其他(V2EX、cnode、知乎...)' },
+            { value: 310, name: 'Coding' },
+            { value: 274, name: 'StackOverFlow' },
+            { value: 235, name: 'SegmentFault' },
+            { value: 400, name: 'Github' }
         ].sort(function(a, b) { return a.value - b.value; }),
         roseType: 'radius',
         label: {
