@@ -143,7 +143,7 @@ var option = {
             normal: {
                 color: function(params) {
                     // build a color map as your need.
-                    var colorList = ['#e54d26', '#fa8c35', '#faff72', '#21a675', '#00e09e', '#4b5cc4', '#8d4bbb']
+                    var colorList = ['#9cf', '#cf9', '#6cc', '#fcc', '#ccf', '#9cf', '#cff']
                     return colorList[params.dataIndex]
                 },
                 label: {
