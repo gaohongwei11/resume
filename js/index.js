@@ -83,7 +83,7 @@ var option = {
         left: 'center',
         top: 20,
         textStyle: {
-            color: '#ccc'
+            color: '#fff'
         }
     },
     color: [],
@@ -164,7 +164,7 @@ let option2 = {
         left: 'center',
         top: 20,
         textStyle: {
-            color: '#ccc'
+            color: '#fff'
         }
     },
 
