@@ -76,7 +76,7 @@ var myChart2 = echarts.init(document.getElementById('main2'));
 
 // 指定图表的配置项和数据
 var option = {
-    backgroundColor: '#2c343c',
+    backgroundColor: '#668099',
 
     title: {
         text: '专业技能',
@@ -157,7 +157,7 @@ var option = {
     }]
 };
 let option2 = {
-    backgroundColor: '#2c343c',
+    backgroundColor: '#668099',
 
     title: {
         text: '浏览网站',

@@ -26,18 +26,33 @@ body {
     align-items: center;
 }
 
-.swiper-slide:nth-child(odd) {
-    background: tomato;
+.swiper-slide:nth-child(1) {
+    background: #669980;
     color: #fff;
 }
 
-.swiper-slide:nth-child(even) {
-    background: #3183ff;
+.swiper-slide:nth-child(2) {
+    background: #669999;
     color: #fff;
 }
 
 .swiper-slide:nth-child(3) {
-    background: #2c343c;
+    background: #668099;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(4) {
+    background: #666699;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(5) {
+    background: #806699;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(6) {
+    background: #996680;
     color: #fff;
 }
 
@@ -201,16 +216,6 @@ body {
 .swiper-slide:nth-of-type(1) {
     width: 100%;
     height: 100%;
-    background: #76b852;
-    background-image: background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-    background-image: background: -o-linear-gradient(right, #76b852, #8DC26F);
-    background-image: background: linear-gradient(to left, #76b852, #8DC26F);
-    background-image: background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-    background-image: background: -o-linear-gradient(right, #76b852, #8DC26F);
-    background-image: background: linear-gradient(to left, #76b852, #8DC26F);
-    background-image: background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-    background-image: background: -o-linear-gradient(right, #76b852, #8DC26F);
-    background-image: background: linear-gradient(to left, #76b852, #8DC26F);
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
     display: -webkit-box;
