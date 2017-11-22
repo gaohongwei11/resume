@@ -1,0 +1,11 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -10,7 +10,8 @@
+     <meta name="description" content="高宏伟的个人简历,web前端开发工程师">
+     <!-- CSS -->
+     <link rel="stylesheet" href="./css/reset.css">
+-    <link rel="stylesheet" href="./css/swiper.min.css">
++    <!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
++    <link href="https://cdn.bootcss.com/Swiper/3.4.1/css/swiper.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="./css/index.css">
+     <!-- 百度统计 -->
+     <script>
