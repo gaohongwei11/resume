@@ -1,3 +1,7 @@
+let loading = document.querySelector('.loading')
+window.onload=function(){
+    loading.style.display = 'none'
+} 
 var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     followFinger: false,

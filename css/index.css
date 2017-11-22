@@ -68,6 +68,7 @@ body {
 }
 
 
+
 /*NAV*/
 
 .top {
@@ -211,6 +212,7 @@ body {
 }
 
 
+
 /*hello world*/
 
 .swiper-slide:nth-of-type(1) {
@@ -345,6 +347,7 @@ body {
 }
 
 
+
 /*个人简介*/
 
 .introduce {
@@ -382,9 +385,11 @@ body {
 .introduce_text>ul>li>span:last-child {
     white-space: nowrap;
 }
-.introduce_text>ul>li>span>a{
+
+.introduce_text>ul>li>span>a {
     color: #fff;
 }
+
 .introduce_text>section {
     /*margin-left: 50px;*/
     width: 50%;
@@ -424,6 +429,7 @@ body {
 }
 
 
+
 /*专业技能*/
 
 .chart {
@@ -439,6 +445,7 @@ body {
     width: 600px;
     height: 400px;
 }
+
 
 
 /*工作经历*/
@@ -497,6 +504,7 @@ body {
 }
 
 
+
 /*项目经验*/
 
 .items {
@@ -545,6 +553,7 @@ body {
 }
 
 
+
 /*联系邮箱*/
 
 .email {
@@ -553,6 +562,78 @@ body {
 
 .email>a {
     color: #fff;
+}
+
+
+/*loading*/
+.loading{
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #996699;
+}
+.spinner {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner>div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
 }
 
 
