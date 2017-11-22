@@ -5,11 +5,6 @@ var swiper = new Swiper('.swiper-container', {
     width: window.innerWidth,
     height: window.innerHeight,
     mousewheelControl: true,
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    paginationBulletRender: function(swiper, index, className) {
-        // return '<span class="' + className + '">' + (index) + '</span>';
-    },
     onInit: function(swiper) {
         slide = swiper.slides.eq(0);
         slide.addClass('ani-slide');
