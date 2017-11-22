@@ -1,7 +1,3 @@
-let loading = document.querySelector('.loading')
-window.onload=function(){
-    loading.style.display = 'none'
-} 
 var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     followFinger: false,
@@ -228,3 +224,7 @@ let option2 = {
 // 使用刚指定的配置项和数据显示图表。
 // myChart.setOption(option);
 // myChart2.setOption(option2);
+var loading = document.querySelector('.loading')
+window.addEventListener('load',function(){
+    loading.style.display = 'none'
+})
